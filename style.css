@@ -4,7 +4,8 @@ body{
 margin: 0;
 padding: 0;
 box-sizing:border-box;
-background-color: rgb(5, 11, 27);
+ background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://th.bing.com/th/id/R.f92e105ac24af0b5c067b763bad4838b?rik=ZFjeA8AZn0tSHQ&pid=ImgRaw&r=0");
+ background-color: #181d1d;
 }
 
 .container{
@@ -14,7 +15,7 @@ background-color: rgb(5, 11, 27);
     padding:0 20px;
     margin-left: 25px;
 }
-/* Header Section */
+/*==================================================================*/
 .main-header{
     display: flex;
     padding:20px 0;
@@ -29,12 +30,10 @@ background-color: rgb(5, 11, 27);
 .logo{
     display: flex;
     font-size: 24px;
-    font-weight:bold;
-    color:#ffffff;
+    color:#e3f0f5;
     transition: transform 0.3s ease;
-      font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+      font-family: "Faster One", sans-serif;
+  font-weight: lighter;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -50,19 +49,19 @@ background-color: rgb(5, 11, 27);
 }
 
 .main-nav {
-      margin-left: 290px;
+      margin-left: 600px;
       font-size: 15px;
       font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 .main-nav a:hover{
-    color: #40da8d;
-    border-bottom: 2px solid #40da8d;
+    color: #40a9da;
+    border-bottom: 2px solid #489add;
     padding-bottom: 5px;
 }
 .main-nav a:focus{
-    outline: 2px solid #40da8d;
+    outline: 2px solid #57d3f1;
     outline-offset: 4px;
 }
 .features{
@@ -82,11 +81,11 @@ background-color: rgb(5, 11, 27);
 */
 .hero-img{
     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://tse2.mm.bing.net/th/id/OIP.dTIcGbHRMDvDBlsyFR3ynAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
-    height: 50%;
+    height: 1%;
 background-position: center;
 background-size:cover;
 position: relative;
-padding: 200px;
+padding: 150px;
 margin-top: -70px;
 opacity: 0.9;
 z-index: -1;
@@ -106,13 +105,20 @@ z-index: -1;
     color: whitesmoke;
      font-family: "Poppins", sans-serif;
      font-size: 25px;
+     margin-top: -80px;
+}
+
+.card-header{
+    text-align: center;
+    color: whitesmoke;
+     font-family: "Poppins", sans-serif;
+     font-size: 25px;
+  
 }
 
 .about{
-    padding:50px 0;
+    padding:10px 0;
     border-radius: 12px;
-    background-color: rgb(2, 11, 48);
-    margin: 25px;
 }
 .about-content{
     display: flex;
@@ -123,6 +129,8 @@ z-index: -1;
 .about-text{
     flex:1;
     color: whitesmoke;
+    font-size: 15px;
+    
 }
 .about-image{
     flex:1;
@@ -131,16 +139,7 @@ z-index: -1;
      color: whitesmoke;
      font-family: "Poppins", sans-serif;
 }
-.join-btn{
-background-color:#0b1a44;
-color:#40da8d;
-border:#40da8d;
-padding:12px 24px;
-border-radius:8px;
-font-weight:600;
-cursor:pointer;
-float: left;
-}
+
 .community-image img {
     width:100%;
     border-radius: 12px;
@@ -156,14 +155,16 @@ float: left;
    flex-wrap: wrap;
    justify-content:space-between;
    gap: 25px;
-   margin: 25px;
+   margin: 0px;
+   padding: 10px;
 }
 
 
-.card{
+.card-1{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.bing.com/th/id/OGC.5cf0a1a2198cd74b06685636146e253e?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fwww.gifcen.com%2fwp-content%2fuploads%2f2022%2f09%2ffootball-gif-5.gif&ehk=D7pMMgKlUQRKsT412PT5phhAtbYSAnoxC3ke7CMKP5E%3d");
    border-radius: 12px;
    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-   padding: 0 auto;
+   padding: 100px;
    text-decoration: none;
    overflow:hidden;
    transition: transform 0.3s ease;
@@ -171,28 +172,63 @@ float: left;
    background-color:#1a1a28;
    text-align: center;
    margin: 10px;
+   margin-bottom: 100px;
 }
-.card:hover{
+.card-2{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://gifdb.com/images/high/breathtaking-soccer-goal-vcw0k1kt0t14bqy7.gif");
+   border-radius: 12px;
+   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+   padding: 100px;
+   text-decoration: none;
+   overflow:hidden;
+   transition: transform 0.3s ease;
+      flex: 1;
+   background-color:#1a1a28;
+   text-align: center;
+   margin: 10px;
+   margin-bottom: 100px;
+}
+.card-3{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://media1.tenor.com/m/yVdFCbZBwVEAAAAC/soccer-soccer-ball.gif");
+   border-radius: 12px;
+   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+   padding: 100px;
+   text-decoration: none;
+   overflow:hidden;
+   transition: transform 0.3s ease;
+      flex: 1;
+   background-color:#1a1a28;
+   text-align: center;
+   
+   margin: 10px;
+   margin-bottom: 100px;
+}
+
+.card-1:hover{
    transform: translateY(-12px);
    box-shadow: 0 18px 40px rgba(0, 174, 255, 0.25) ;
 }
-.card-image{
-   width: 100%;
-   height: 250px;
-   object-fit: cover;
+.card-2:hover{
+   transform: translateY(-12px);
+   box-shadow: 0 18px 40px rgba(0, 174, 255, 0.25) ;
 }
+.card-3:hover{
+   transform: translateY(-12px);
+   box-shadow: 0 18px 40px rgba(0, 174, 255, 0.25) ;
+}
+
 .card-content{
-   padding: 25px;
+   padding: 0px auto;
 }
 .card-title{
    color: white;
-   font-size: 27px;
+   font-size: 30px;
    margin-top: -15px;
    font-family: "Poppins", sans-serif;
 }
 .card-description{
    color:#b0b0b0;
-   font-size: 14px;
+   font-size: 20px;
    line-height: 1.6;
    font-family: "Poppins", sans-serif;
 margin-top: -15px;
@@ -200,3 +236,69 @@ margin-top: -15px;
 
 
 /*==================================================================*/
+.main-footer {
+    background: linear-gradient(149deg, #232527 0%, #243738 100%);
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.credit-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.credit-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.credit-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.credit-section p {
+    color: #bdc3c7;
+    font-size: 16px;
+}
+
+.credit-links {
+    list-style: none;
+}
+
+.credit-links li {
+    margin-bottom: 10px;
+}
+
+.credit-bottom a:hover {
+    color: #3498db;
+}
+
+.credit-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.credit-links a:hover {
+    color: #3498db;
+}
+
+.credit-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #95a5a6;
+}
+
+.credit-bottom a {
+    color: #95a5a6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
