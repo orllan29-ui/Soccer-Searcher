@@ -33,11 +33,12 @@
      </div>
          <!--==================================================================-->
       <div class="search-bar">
-    <input type="text" class="user-input" placeholder="Enter player name" >
-  <button class="btn" id="profile">Search</button>
+    <input type="text" class="user-input" id="pokemonName" placeholder="Enter player name" >
+    <button type="button" onclick="fetchData()" id="btn">Search</button>
   </div>
    <p id="error"></p>
     <div id="profile" class="hidden"></div>
+    <img src="" alt="soccer badge" id="badge" style="display:none;">
     <!--==================================================================-->
     <div class="card-header"><h1> ⚽Features⚽</h1></div>
     <div class="card-container">

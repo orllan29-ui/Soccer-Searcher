@@ -1,27 +1,43 @@
-const input = document.querySelector("#user-input")
-const searchBtn = document.querySelector("search-btn")
-const profile = document.querySelector("#profile")
-const error = document.querySelector("#error")
+//fetch("https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=Arsenal")
+//.then(response => response.json())
+//.then(data => console.log(data))
+//.catch(error => console.error(error))
+//
 
-const fetchUser = async () => {
-const playername = input.value.trim();
-if(!playername) return
-error.classList.add("hidden")
-profile.innerHTML = " Loading..."
-profile.classList.remove("hidden")
-const api = await fetch(`https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=Arsenal`)
-const data = await api.json()
-console.log(data)
+async function fetchData() {
+    try {
+        const playerName = document.getElementById("pokemonName").value.trim();
+        const response = await fetch(
+            `https://www.thesportsdb.com/api/v1/json/123/searchplayers.php?p=${encodeURIComponent(playerName)}`
+        );
+        if (!response.ok) {
+            throw new Error("Could not fetch resource");
+        }
 
-renderProfile(data)
-}
+        const data = await response.json();
 
-searchBtn.addEventListener(`click`, fetchUser)
-input.addEventListener("keydown", (e) =>{
-    if(e.key === "Enter") fetchUser()
-})
+        console.log(data);
 
-function renderProfile(data){
-    profile.classList.remove("hidden")
-    profile.innerHTML = `  <img src="${data.avatar_url}" class="avatar" />`
+        if (!data.player) {
+            document.getElementById("error").textContent =
+                "Player not found";
+            return;
+        }
+        const player = data.player[0];
+
+        console.log("Returned player:", player.strPlayer);
+
+        const badge = document.getElementById("badge");
+
+        badge.src = player.strCutout || player.strThumb;
+
+        badge.style.display = "block";
+
+    } catch(error) {
+
+        console.error(error);
+
+        document.getElementById("error").textContent =
+            "Something went wrong";
+    }
 }
