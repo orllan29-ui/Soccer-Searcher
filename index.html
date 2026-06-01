@@ -36,9 +36,13 @@
     <input type="text" class="user-input" id="pokemonName" placeholder="Enter player name" >
     <button type="button" onclick="fetchData()" id="btn">Search</button>
   </div>
-   <p id="error"></p>
+  <div class="stat-page">
     <div id="profile" class="hidden"></div>
     <img src="" alt="soccer badge" id="badge" style="display:none;">
+    <p id="position" stlye="display:none;"> </p>
+     <p id="nationality" stlye="display:none;"> </p>
+    <p id="description" stlye="display:none;"> </p>
+    </div>
     <!--==================================================================-->
     <div class="card-header"><h1> ⚽Features⚽</h1></div>
     <div class="card-container">
@@ -100,12 +104,13 @@
                     </ul>
                 </div>
             </div>
+            </div>
             <div class="credit-bottom">
                 <p> 2026 Soccer-Searcher. All rights reserved. | 
                     <a href="#">Privacy Policy</a> |
                      <a href="#">Terms of Service</a></p>
             </div>
-        </div>
+        
     </footer>
 <script src="script.js"></script>
 </body>

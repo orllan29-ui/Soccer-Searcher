@@ -249,6 +249,7 @@ margin-top: -15px;
     gap: 40px;
     margin-bottom: 40px;
     font-family: "Poppins", sans-serif;
+    margin-left: 325px;
 }
 
 .credit-section {
@@ -334,4 +335,12 @@ margin-left: 275px;
 
 .hidden{
     display: none;
+}
+
+.stat-page{
+    text-align: center;
+    background-color: #323538; 
+    color: #c5bbbb;
+    font-weight: bold;
+   
 }
