@@ -339,8 +339,13 @@ margin-left: 275px;
 
 .stat-page{
     text-align: center;
-    background-color: #323538; 
     color: #c5bbbb;
     font-weight: bold;
-   
+    margin: 20px;
+
 }
+.stat-page img{
+border:5px solid white;
+}
+ 
+

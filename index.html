@@ -37,12 +37,16 @@
     <button type="button" onclick="fetchData()" id="btn">Search</button>
   </div>
   <div class="stat-page">
-    <div id="profile" class="hidden"></div>
     <img src="" alt="soccer badge" id="badge" style="display:none;">
     <p id="position" stlye="display:none;"> </p>
-     <p id="nationality" stlye="display:none;"> </p>
+     </div>
+       <div id="flagContainer"></div>
+       <div class="stat-page">
+    <p id="player-sport" style="display:none;"></p>
+     <p id="nationality" id="flagContainer"> </p>
     <p id="description" stlye="display:none;"> </p>
-    </div>
+     <p id="player-team" stlye="display:none;"> </p>
+   </div>
     <!--==================================================================-->
     <div class="card-header"><h1> ⚽Features⚽</h1></div>
     <div class="card-container">
@@ -113,5 +117,6 @@
         
     </footer>
 <script src="script.js"></script>
+<script src="flags.js"></script>
 </body>
 </html>
