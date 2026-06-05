@@ -296,7 +296,7 @@ async function fetchData() {
           teamIcon.style.width = "200px"
           document.getElementById("teamContainer").appendChild(teamIcon)
         }
-   if(player.strTeam === "Alanta Braves"){
+   if(player.strTeam === "Atlanta Braves"){
           document.getElementById("teamContainer").innerHTML=""
           const teamIcon = document.createElement("img")
           teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/144.svg";
@@ -366,7 +366,7 @@ async function fetchData() {
     teamIcon.style.width = "200px"
     document.getElementById("teamContainer").appendChild(teamIcon)
         }
-           if(player.strTeam === "Kansas Royals"){
+           if(player.strTeam === "Kansas City Royals"){
     document.getElementById("teamContainer").innerHTML=""
    const teamIcon = document.createElement("img")
     teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/118.svg";
@@ -492,6 +492,230 @@ async function fetchData() {
 //  NFL TEAMs
 //=======================================================================================================================================
 //=======================================================================================================================================
+ if(player.strTeam === "Dallas Cowboys"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Logo-Dallas-Cowboys-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "New England Patriots"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-England-Patriots-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Green Bay Packers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Green-Bay-Packers-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Pittsburgh Steelers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Pittsburgh-Steelers-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "San Francisco 49ers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/San-Francisco-49ers-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Kansas City Chiefs"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Kansas-City-Chiefs-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "https://logos-world.net/wp-content/uploads/2023/09/Philadelphia-Eagles-Logo-500x281.png"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Philadelphia-Eagles-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "New York Giants"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-York-Giants-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Chicago Bears"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Chicago-Bears-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Seattle Seahawks"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Seattle-Seahawks-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Denver Broncos"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Denver-Broncos-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "New Orleans Saints"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-Orleans-Saints-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Baltimore Ravens"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/08/Logo-Baltimore-Ravens-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+       if(player.strTeam === "Las Vegas Raiders"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Las-Vegas-Raiders-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Los Angeles Rams"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Los-Angeles-Rams-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Minnesota Vikings"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Minnesota-Vikings-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Buffalo Bills"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Buffalo-Bills-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Tampa Bay Buccaneers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Tampa-Bay-Buccaneers-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Alanta Falcons"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Logo-Atlanta-Falcons-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Indianapolis Colts"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Indianapolis-Colts-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Miami Dolphins"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Miami-Dolphins-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Cleveland Browns"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Cleveland-Browns-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Tennessee Titans"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Tennessee-Titans-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Carolina Panthers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Carolina-Panthers-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Houston Texans"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Houston-Texans-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Detroit Lions"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Detroit-Lions-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Arizona Cardinals"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Arizona-Cardinals-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Cincinnati Bengals"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Cincinnati-Bengals-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Washington Commanders"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Washington-Commanders-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "New York Jets"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-York-Jets-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Los Angeles Chargers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Los-Angeles-Chargers-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Jacksonville Jaguars"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Jacksonville-Jaguars-Logo-500x281.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
 //=======================================================================================================================================
 //======================================================================================================================================
 //=======================================================================================================================================
