@@ -267,7 +267,232 @@ async function fetchData() {
           document.getElementById("teamContainer").appendChild(teamIcon)
         }
 
-
+//======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//  MLB TEAMS
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+  if(player.strTeam === "New York Yankees"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/147.svg";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Arizona Diamondbacks"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/109.svg";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+ if(player.strTeam === "Athletics"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/133.svg";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Alanta Braves"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/144.svg";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+    if(player.strTeam === "Baltimore Orioles"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/110.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+     if(player.strTeam === "Boston Red Sox"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/111.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Chicago Cubs"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/112.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+             if(player.strTeam === "Chicago White Sox"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/145.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+             if(player.strTeam === "Cincinnati Reds"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/113.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+             if(player.strTeam === "Cleveland Guardians"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/114.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Colorado Rockies"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/115.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Detroit Tigers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/116.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Houston Astros"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-primary-on-light/117.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Kansas Royals"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/118.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Los Angeles Angels"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/108.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+     if(player.strTeam === "Los Angeles Dodgers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/119.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+        if(player.strTeam === "Miami Marlins"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/146.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Milwaukee Brewers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/158.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Minnesota Twins"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/142.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "New York Mets"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/121.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Philadelphia Phillies"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/143.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Pittsburgh Pirates"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/134.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "San Diego Padres"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/135.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+     if(player.strTeam === "San Francisco Giants"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/137.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+     if(player.strTeam === "Seattle Mariners"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-primary-on-light/136.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+ if(player.strTeam === "St.Louis Cardinals"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/138.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Tampa Bay Rays"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/139.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Texas Rangers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/140.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Toronto Blue Jays"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/141.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Washington Nationals"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.mlbstatic.com/team-logos/team-cap-on-light/120.svg";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+//======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//  NFL TEAMs
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
 //======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
