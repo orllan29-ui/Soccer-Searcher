@@ -716,6 +716,251 @@ async function fetchData() {
     teamIcon.style.width = "200px"
     document.getElementById("teamContainer").appendChild(teamIcon)
         }
+         if(player.strTeam === "_Free Agent American Football"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://www.sportsworldnevada.com/wp-content/uploads/2022/05/FREE-AGENT-LOGO.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+//======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//  NHL TEAMS
+//======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+if(player.strTeam === "Anaheim Ducks"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_769a41303c154bd0aa654c62a7cd2754~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_769a41303c154bd0aa654c62a7cd2754~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+if(player.strTeam === "Boston Bruins"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_f08c6d14ba664c94a04d55d8a15af472~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_f08c6d14ba664c94a04d55d8a15af472~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Buffalo Sabres"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_20aa5d7fbd6440e397a6ec98940193e5~mv2.png/v1/fill/w_463,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_20aa5d7fbd6440e397a6ec98940193e5~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Calgary Flames"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_b901b23a600f41fc88b0f42fd38deaf5~mv2.png/v1/fill/w_463,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_b901b23a600f41fc88b0f42fd38deaf5~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Carolina Hurricanes"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_aff9216f99ff4cceb61caba45a2e8b9c~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_aff9216f99ff4cceb61caba45a2e8b9c~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Chicago Blackhawks"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_040659cb7db94b39b8560276a35fc8e3~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_040659cb7db94b39b8560276a35fc8e3~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Colorado Avalanche"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_3100c4beeab64400872ef2c43be9ffa3~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_3100c4beeab64400872ef2c43be9ffa3~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Columbus Blue Jackets"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_546a74b41863469583ed937d08635e73~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_546a74b41863469583ed937d08635e73~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Dallas Stars"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_dd8b454505b34a5d940a030cab1fe0cd~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_dd8b454505b34a5d940a030cab1fe0cd~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Detroit Red Wings"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_df0dfc38cfe54c32a7d963b6d7180802~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_df0dfc38cfe54c32a7d963b6d7180802~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+  if(player.strTeam === "Edmonton Oilers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_934d2213949c49aca9d509aa4c68531a~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_934d2213949c49aca9d509aa4c68531a~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+    if(player.strTeam === "Florida Panthers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_5cf413a02d734d54a082b62ec8255b83~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_5cf413a02d734d54a082b62ec8255b83~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Los Angeles Kings"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_70808b1d5b6948c7a656fde76e2abac5~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_70808b1d5b6948c7a656fde76e2abac5~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Minnesota Wild"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_49f5c78c5b7e4d999e62514d7e4a73fc~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_49f5c78c5b7e4d999e62514d7e4a73fc~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+ if(player.strTeam === "Montreal Canadiens"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_85b92c6f6a894b3fbf445f14de9f332b~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_85b92c6f6a894b3fbf445f14de9f332b~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Nashville Predators"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_1eda07a599f64197b183da45d93600eb~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_1eda07a599f64197b183da45d93600eb~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+ if(player.strTeam === "New Jersey Devils"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_e5bc8a140c0b43068fdaccf1a5452a05~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_e5bc8a140c0b43068fdaccf1a5452a05~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+ if(player.strTeam === "New York Islanders"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_96602e965394421cacdcf9222d04601b~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_96602e965394421cacdcf9222d04601b~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+ if(player.strTeam === "New York Rangers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_9cbfc2c0b9a84f31a97db8fa905e124c~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_9cbfc2c0b9a84f31a97db8fa905e124c~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Ottawa Senators"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_94badec8d3eb440c98c4a5558081eda1~mv2.png/v1/fill/w_463,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_94badec8d3eb440c98c4a5558081eda1~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+       if(player.strTeam === "Philadelphia Flyers"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_65e8e6efb9b04b61b7d5bf5ed6674831~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_65e8e6efb9b04b61b7d5bf5ed6674831~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+
+     if(player.strTeam === "Pittsburgh Penguins"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_d6f44625497b4c1384e059510e51422e~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_d6f44625497b4c1384e059510e51422e~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+
+     if(player.strTeam === "San Jose Sharks"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_be8ff4f73ed343d6b6237e92df93d1f4~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_be8ff4f73ed343d6b6237e92df93d1f4~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Seattle Kraken"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_effbb7bc858643bc99805af05b4104cf~mv2.png/v1/fill/w_463,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_effbb7bc858643bc99805af05b4104cf~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "St. Louis Blues"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_1f890d2dd7614ae8842c27d8f8fd3d56~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_1f890d2dd7614ae8842c27d8f8fd3d56~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Tampa Bay Lightning"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_b71731f53f974b99a5f94dc9ae01b01d~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_b71731f53f974b99a5f94dc9ae01b01d~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Vancouver Canucks"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_8f986c9f35e44805ae9de5499457a741~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_8f986c9f35e44805ae9de5499457a741~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Toronto Maple Leafs"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_7ce0b4815c3e4b0e8c1bb2243c71aa2c~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_7ce0b4815c3e4b0e8c1bb2243c71aa2c~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+   if(player.strTeam === "Vegas Golden Knights"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_59f4b51de03345448bd27988625ef40a~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_59f4b51de03345448bd27988625ef40a~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+if(player.strTeam === "Washington Capitals"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_2ba590c8eeb54c8a96ffdb6319107613~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_2ba590c8eeb54c8a96ffdb6319107613~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+if(player.strTeam === "Winnipeg Jets"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://static.wixstatic.com/media/3d7fb3_77155ceb5ad24651a45e61ff69481757~mv2.png/v1/fill/w_512,h_463,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d7fb3_77155ceb5ad24651a45e61ff69481757~mv2.png";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+if(player.strTeam === "Utah Hockey Club"){
+    document.getElementById("teamContainer").innerHTML=""
+   const teamIcon = document.createElement("img")
+    teamIcon.src = "https://logowik.com/content/uploads/images/utah-mammoth418.logowik.com.webp";
+    teamIcon.style.width = "200px"
+    document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
 //=======================================================================================================================================
 //======================================================================================================================================
 //=======================================================================================================================================
@@ -1214,6 +1459,20 @@ if (player.strNationality === "Costa Rica"){
   document.getElementById("flagContainer").innerHTML = "";
   const playerFlag = document.createElement("img");
   playerFlag.src = "https://www.countryflags.com/wp-content/uploads/costa-rica-flag-png-large.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("flagContainer").appendChild(playerFlag);
+}
+if (player.strNationality === "United Kingdom"){
+  document.getElementById("flagContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://th.bing.com/th/id/R.89ffb296847e5a3899cd4b0dcc79711b?rik=2BGacdsE8nl7OQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fkNECI1v.jpg&ehk=3PE2L1tPEAdLrUXAr8%2by2x%2bct1WzMjfMuzr3RgLK5WQ%3d&risl=&pid=ImgRaw&r=0"
+  playerFlag.style.width = "75px";
+  document.getElementById("flagContainer").appendChild(playerFlag);
+}
+if (player.strNationality === "Belarus"){
+  document.getElementById("flagContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://th.bing.com/th/id/R.0bf8339dcd6bf173168cd12fdf0bea12?rik=q8%2fuoJUJPVLtdA&pid=ImgRaw&r=0"
   playerFlag.style.width = "75px";
   document.getElementById("flagContainer").appendChild(playerFlag);
 }
