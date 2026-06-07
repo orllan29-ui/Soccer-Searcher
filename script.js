@@ -17,19 +17,52 @@ async function fetchData() {
         badge.style.display = "block";
 
         document.getElementById("position").textContent = player.strPosition;
-        document.getElementById("nationality").textContent = player.strNationality;
         document.getElementById("player-team").textContent = player.strTeam
-        document.getElementById("player-sport").textContent = player.strSport
-
 //================================================================================================================================
         const detailsRes = await fetch(`https://www.thesportsdb.com/api/v1/json/123/lookupplayer.php?id=${playerId}`);
         const detailsData = await detailsRes.json();
 
-        const fullPlayer = detailsData.players[0];   
-
+        const fullPlayer = detailsData.players[0];  
+        
+        document.getElementById("player-weight").textContent = fullPlayer.strWeight
+        document.getElementById("player-height").textContent = fullPlayer.strHeight
+        document.getElementById("player-twitter").textContent = fullPlayer.strTwitter
+        document.getElementById("player-wage").textContent = fullPlayer.strWage
+        document.getElementById("player-kit").textContent = fullPlayer.strKit
         const description = document.getElementById("description");
-        description.textContent = fullPlayer.strDescriptionEN || "No description available.";
+        description.textContent = fullPlayer.strDescriptionEN || "No description available.";''
+        
+        document.getElementById("sportIcon").textContent = fullPlayer.strSport
+        const sportIcon = document.getElementById("sportIcon")
 
+        sportIcon.textContent = ""
+
+            if(fullPlayer.strSport === "Soccer"){
+          sportIcon.textContent = "⚽"
+        }
+        if(fullPlayer.strSport === "Basketball"){
+          sportIcon.textContent = "🏀"
+        }
+        if(fullPlayer.strSport === "Baseball"){
+          sportIcon.textContent = "⚾"
+        }
+      if(fullPlayer.strSport === "Hockey"){
+        sportIcon.textContent = "🏒"
+      }
+      if(fullPlayer.strSport ==="Motorsport"){
+        sportIcon.textContent = "🏎️"
+      }
+      if(fullPlayer.strSport === "American Football"){
+        sportIcon.textContent = "🏈"
+      }
+//======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//  SOCCER-TEAMS
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
         if(player.strTeam === "Inter Miami"){
           document.getElementById("teamContainer").innerHTML=""
           const teamIcon = document.createElement("img")
@@ -44,6 +77,681 @@ async function fetchData() {
           teamIcon.style.width = "200px"
           document.getElementById("teamContainer").appendChild(teamIcon)
         }
+        if(player.strTeam === "Liverpool"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/liverpool.99c48ae3.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Aston Villa"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/aston-villa.07a2646c.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Everton"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/everton.6b635cd7.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Manchester City"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/manchester-city.62f9d1f2.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Manchester United"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Newcastle"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/newcastle.53b65b3d.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Tottenham Hotspur"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/tottenham.f192bf50.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Bournemouth"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/bournemouth.1a237aee.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Brentford"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/brentford.e3296e20.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Brighton"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/brighton.5da206a0.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Crystal Palace"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/crystal-palace.53067b96.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Fulham"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/fulham.4c7ce48b.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Leeds United"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/leeds-united.26dba8f5.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Nottingham Forest"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/nottingham-forest.43b53a26.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Sunderland"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/sunderland.2f55baea.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Ipswich"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/ipswich.86fda687.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "West Ham United"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/west-ham.c86eebf5.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Burnley"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/burnley.7baea7d7.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Wrexham"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/wrexham.8faea20f.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Arsenal"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/england/256x256/arsenal.e5528ede.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Barcelona"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/barcelona.779f8f0f.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Real Madrid"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/real-madrid.5ce15611.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Atletico Madrid"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/atletico-madrid.ba72e2cf.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Sevilla"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/sevilla.b741a6ce.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Valencia"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/valencia.f9d9eee2.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Villarreal"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/villarreal.b0313369.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Real Betis"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/real-betis.7bb10421.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+         if(player.strTeam === "Real Sociedad"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/spain/256x256/real-sociedad.501e3b1e.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+            if(player.strTeam === "Juventus"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/juventus.a8baf848.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+       
+            if(player.strTeam === "AC Milan"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/milan.75d56f90.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Inter Milan"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/inter.3a7ce90c.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Napoli"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/napoli.ee47a50b.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Roma"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/roma.034a933e.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Lazio"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/lazio.2386d28d.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Florentina"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/fiorentina.7ba101c2.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Atalanta"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/atalanta.45225436.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Bologna"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/italy/256x256/bologna.a78d435f.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Bayern Munich"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/bayern-munchen.6c38f13a.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Borussia Dortmund"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/borussia-dortmund.09ffedcd.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "RB Leipzig"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/rb-leipzig.9d65faeb.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Bayer Leverkusen"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/bayer-leverkusen.72f211d8.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Eintracht Frankfurt"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/eintracht-frankfurt.a8244b07.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Union Berlin"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/union-berlin.b0d180f9.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Hamburger SV"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/hamburger-sv.04c2a597.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Wolfsburg"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/germany/256x256/wolfsburg.11ad950e.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Paris SG"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/france/256x256/paris-saint-germain.579907dc.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Olympique Lyonnais"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/france/256x256/lyon.b44ff7aa.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Lille"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/france/256x256/lille.451f5326.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Sporting CP"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/portugal/256x256/sporting-cp.cf9a4c5b.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Benfica"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/portugal/256x256/benfica.3e4d3034.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "FC Porto"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/portugal/256x256/fc-porto.b58f31f6.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Ajax"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/netherlands/256x256/ajax.fadc62c4.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Flamengo"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/brazil/256x256/flamengo.9c3055f2.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Bragantino"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/brazil/256x256/rb-bragantino.58ea7195.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Fluminense"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/brazil/256x256/fluminense.118d8b5e.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Santos"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/brazil/256x256/santos.5ea20e58.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Galatasaray"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/turkey/256x256/galatasaray.b788795f.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Fenerbahçe"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/turkey/256x256/fenerbahce.826f10c2.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Celtic"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/scotland/256x256/celtic.e765443b.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Rangers"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/scotland/256x256/rangers.05ce20d9.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Club Brugge"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/belgium/256x256/club-brugge.78d50f94.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Aldosivi"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/argentina/256x256/aldosivi.1869fe02.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Marseille"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://tse3.mm.bing.net/th/id/OIP.A4Evs4f7ZMwvhWrMh9RJggHaJl?r=0&rs=1&pid=ImgDetMain&o=7&rm=3";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "LA Galaxy"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/LA-Galaxy-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Seattle Sounders FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Seattle-Sounders-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Atlanta United"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Atlanta-United-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "Portland Timbers"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Portland-Timbers-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+          if(player.strTeam === "New York City FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-York-City-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Toronto FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Toronto-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Los Angeles FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/LAFC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "New England Revolution"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-England-Revolution-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "New York Redbulls"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/New-York-Red-Bulls-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Sporting Kansas City"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Sporting-Kansas-City-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Philadelphia Union"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Philadelphia-Union-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Orlando City"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Orlando-City-SC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "DC United"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/D.C-United-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Columbus Crew"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Columbus-Crew-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "FC Dallas"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/FC-Dallas-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+
+           if(player.strTeam === "Minnesota United FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Minnesota-United-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+           if(player.strTeam === "Houston Dynamo"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Houston-Dynamo-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === ""){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Chicago Fire "){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Chicago-Fire-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Real Salt Lake"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Real-Salt-Lake-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Colorado Rapids"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Colorado-Rapids-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "San Jose Earthquakes"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/San-Jose-Earthquakes-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Nashville SC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Nashville-SC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "FC Cincinnati"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/FC-Cincinnati-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "CF Montreal"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/CF-Montreal-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }      if(player.strTeam === "Vancouver Whitecaps"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Vancouver-Whitecaps-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Austin FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Austin-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+            if(player.strTeam === "St. Louis City SC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Saint-Louis-City-SC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+            if(player.strTeam === "Charlotte FC"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://logos-world.net/wp-content/uploads/2023/09/Charlotte-FC-Logo-500x281.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+               if(player.strTeam === "Al Ittihad"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ittihad.9a2895c9.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Al-Hilal"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-hilal.fc7a4d70.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Al-Nassr"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-nassr.7e60a8fc.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+              if(player.strTeam === "Al-Ahli"){
+          document.getElementById("teamContainer").innerHTML=""
+          const teamIcon = document.createElement("img")
+          teamIcon.src = "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ahli.4a088ea9.png";
+          teamIcon.style.width = "200px"
+          document.getElementById("teamContainer").appendChild(teamIcon)
+        }
+    
+
 //======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
@@ -1473,6 +2181,13 @@ if (player.strNationality === "Belarus"){
   document.getElementById("flagContainer").innerHTML = "";
   const playerFlag = document.createElement("img");
   playerFlag.src = "https://th.bing.com/th/id/R.0bf8339dcd6bf173168cd12fdf0bea12?rik=q8%2fuoJUJPVLtdA&pid=ImgRaw&r=0"
+  playerFlag.style.width = "75px";
+  document.getElementById("flagContainer").appendChild(playerFlag);
+}
+if (player.strNationality === "Serbia"){
+  document.getElementById("flagContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://www.countryflags.com/wp-content/uploads/serbia-flag-png-large.png"
   playerFlag.style.width = "75px";
   document.getElementById("flagContainer").appendChild(playerFlag);
 }
