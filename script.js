@@ -2195,6 +2195,92 @@ if (player.strNationality === "Serbia"){
 //=======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
+// F1 TEAMS
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+if (player.strTeam === "BWT Alpine Formula One Team"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://logos-world.net/wp-content/uploads/2023/08/Alpine-Logo-500x281.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Aston Martin Aramco Formula One Team"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://th.bing.com/th/id/R.f5618aa1b5a8008702c6e9277f65b2bc?rik=gkKQEBKILdwU5w&riu=http%3a%2f%2flive.planetf1.com%2fContent%2fImages%2fTeams%2f21565.png&ehk=K5UX7frOdxdZcAeBkuLK9gci8C3jl0Eoj%2f7MwlHZZDY%3d&risl=&pid=ImgRaw&r=0"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Scuderia Ferrari HP"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://logos-world.net/wp-content/uploads/2023/08/Ferrari-F1-Logo-500x281.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "MoneyGram Haas F1 Team"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://logos-world.net/wp-content/uploads/2023/08/Haas-Logo-500x281.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Stake F1 Team Kick Sauber"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://liquipedia.net/commons/images/e/e4/Audi_F1_allmode.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Cadillac Formula 1 Team"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Cadillac_Formula_1_Team_logo.png/1280px-Cadillac_Formula_1_Team_logo.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Mercedes"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://th.bing.com/th/id/OIP.uSvxlhLlJKwfnV6Zh3DrpwHaGl?w=194&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "McLaren"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://th.bing.com/th/id/R.7c30b7c7e3c9060ff7940a7fc6fe0e29?rik=3E%2bQcQSzvC87WA&riu=http%3a%2f%2fas01.epimg.net%2fimg%2fcomunes%2ffotos%2ffichas%2fequipos%2flarge%2f4140.png&ehk=A5VjscVdHVGcMGwF6crlfwYfLmNQVpKaMP3DUnUqeM4%3d&risl=&pid=ImgRaw&r=0"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Red Bull"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://logodix.com/logo/401262.png"
+  playerFlag.style.width = "125px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Visa Cash App Racing Bulls Formula One Team"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://liquipedia.net/commons/images/3/39/RB_allmode.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+if (player.strTeam === "Williams"){
+  document.getElementById("teamContainer").innerHTML = "";
+  const playerFlag = document.createElement("img");
+  playerFlag.src = "https://logodix.com/logo/615459.png"
+  playerFlag.style.width = "75px";
+  document.getElementById("teamContainer").appendChild(playerFlag);
+}
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
+//=======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
     } catch (error) {
