@@ -4,7 +4,10 @@ body{
 margin: 0;
 padding: 0;
 box-sizing:border-box;
- background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://th.bing.com/th/id/R.f92e105ac24af0b5c067b763bad4838b?rik=ZFjeA8AZn0tSHQ&pid=ImgRaw&r=0");
+ background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://static.vecteezy.com/system/resources/thumbnails/027/827/860/small_2x/abstract-black-gradient-color-background-with-geometric-shape-for-modern-graphic-design-element-vector.jpg");
+ background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
  background-color: #181d1d;
 }
 
@@ -13,19 +16,23 @@ box-sizing:border-box;
     max-width: 1200px;
     margin:0 auto;
     padding:0 20px;
-    margin-left: 25px;
+    margin-left: 90px;
 }
 /*==================================================================*/
 .main-header{
     display: flex;
-    padding:20px 0;
+    padding:15px;
     opacity: 0.9;
-    background: linear-gradient(to top,rgba(255,255,255,0)0%, rgb(31, 31, 31)70%);
+    background: linear-gradient(to top,rgba(255,255,255,0)0%, rgb(10, 7, 41)70%);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .main-header .container{
     display:flex;
     justify-content: space-between;
     align-items:center;
+      margin-left: 100px;
 }
 .logo{
     display: flex;
@@ -34,6 +41,9 @@ box-sizing:border-box;
     transition: transform 0.3s ease;
       font-family: "Faster One", sans-serif;
   font-weight: lighter;
+  margin-right: -200px;
+  margin-left: -100px;
+  
 }
 .logo:hover{
     transform: scale(1.1);
@@ -44,7 +54,7 @@ box-sizing:border-box;
     text-decoration: none;
  transition: color 0.75s ease;
  font-weight: bold;
- margin-left: 40px;
+ margin-left: 60px;
 
 }
 
@@ -80,7 +90,10 @@ box-sizing:border-box;
 /* ==================================================================
 */
 .hero-img{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://tse2.mm.bing.net/th/id/OIP.dTIcGbHRMDvDBlsyFR3ynAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif");
+     background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
     height: 1%;
 background-position: center;
 background-size:cover;
@@ -89,6 +102,7 @@ padding: 150px;
 margin-top: -70px;
 opacity: 0.9;
 z-index: -1;
+
 }
 
 .hero-text{
@@ -96,8 +110,14 @@ z-index: -1;
     color: whitesmoke;
      font-family: "Poppins", sans-serif;
      font-size: 25px;
-     
+     margin-top: -50px;
 }
+
+.league-logos img{
+    margin-left: 60px;
+}
+
+
 
 /*==================================================================*/
 .about-header{
@@ -125,6 +145,7 @@ z-index: -1;
     align-items: center;
     gap:60px;
     flex-direction: row-reverse;
+    margin-bottom: 50px;
 }
 .about-text{
     flex:1;
@@ -175,7 +196,10 @@ z-index: -1;
    margin-bottom: 100px;
 }
 .card-2{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://gifdb.com/images/high/breathtaking-soccer-goal-vcw0k1kt0t14bqy7.gif");
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.nba.com/manage/2025/03/giddey-game-winner-250327.gif");
+   background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
    border-radius: 12px;
    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
    padding: 100px;
@@ -189,7 +213,10 @@ z-index: -1;
    margin-bottom: 100px;
 }
 .card-3{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://media1.tenor.com/m/yVdFCbZBwVEAAAAC/soccer-soccer-ball.gif");
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://64.media.tumblr.com/232157904c836ff40669595fe81da215/tumblr_opcs1dXGGV1qgsza6o1_540.gifv");
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
    border-radius: 12px;
    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
    padding: 100px;
@@ -304,34 +331,44 @@ margin-top: -15px;
 }
 
 .search-bar{
-    display: flex;
-    align-items:center;
-    margin-bottom: 20px;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0b132b, #1c2541);
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-width: 800px;
+  margin: 40px auto;
 }
 
 .user-input{
-color: #ffffff;
-font-size: 30px;
-text-decoration: none;
-background-color: rgb(18, 26, 34);   
- padding:20px 200px;
-transition:color 0.75s ease;
- border-radius: 12px;
- border: solid 2px rgb(18, 26, 34);
- font-size: 35px;
- transition: transform 0.3s ease;
-box-shadow:0 5px 5px rgb(0, 0, 0, 0.5);
-margin-top: 50px;
-margin-left: 275px;
+  flex: 1;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+background: linear-gradient(135deg, #0b132b, #1c2541);
+  color: #fff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  
 
 }
 
 #btn{
-    font-weight: bold;
-    background-color: rgb(161, 90, 90);
-    padding: 33px ;
-    border-radius: 12px;
-    margin-bottom: -50px;  
+    background: linear-gradient(135deg, #101235, #0d1c5e); 
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;         
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .hidden{

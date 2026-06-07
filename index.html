@@ -15,9 +15,11 @@
 <body>
       <header class="main-header">
         <div class="container">
-            <div class="logo"> ⚽Soccer Searcher</div> 
+            <div class="logo"> Sports Searcher</div> 
             <nav class="main-nav">
                 <a href="#features"> Features</a>
+                <a href="#search">Search</a>
+                <a href ="#my-player">My Players</a>
                 <a href="#about"> About</a>
                 <a href="#Credits">Credits</a>
             </nav>
@@ -27,11 +29,25 @@
     <!--==================================================================-->
      <div class="hero-img">
         <div class="hero-text">
-            <h1>Soccer Searcher</h1>
-            <h2> The ultimate soccer statistics website!</h2>
+            <h1>Sports Searcher</h1>
+            <h2> The Ultimate Player Info Website!</h2>
+        </div>
+        <div class="league-logos">
+        <img src="https://th.bing.com/th/id/R.71a06dcad19f22c10c02dbf8917cf3fb?rik=9JO2Wl0Yzl6yMg&pid=ImgRaw&r=0" width="130px">
+        <img src="https://www.freepnglogos.com/uploads/nba-logo-png/nba-logo-png-5.png" width="40px">
+        <img src="https://www.freepnglogos.com/uploads/nhl-logo-png/image-logo-nhl-1.png" width="80px">
+        <img src="https://www.pngkey.com/png/full/4-48305_nfl-logo-png.png" width="70px">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Major_League_Soccer_logo.svg/500px-Major_League_Soccer_logo.svg.png" width="70px">
+        <img src="https://static.vecteezy.com/system/resources/previews/015/863/721/original/england-premier-league-logo-on-transparent-background-free-vector.jpg" width="90px">
+        <img src="https://tiermaker.com/images/templates/la-liga-stadium-2023-15602498/156024981695337207.png" width="70px">
+        <img src="https://logos-world.net/wp-content/uploads/2023/06/World-Cup-2026-Logo.png" width="200px">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/04/nba-finals-logo-freelogovectors.net_.png" width="180px">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/2025_Stanley_Cup_playoffs_logo.png" width="120px">
+         <img src="https://www.pngmart.com/files/23/F1-Logo-PNG-HD.png" height="40px">
         </div>
      </div>
          <!--==================================================================-->
+        <section id="search">
       <div class="search-bar">
     <input type="text" class="user-input" id="pokemonName" placeholder="Enter player name" >
     <button type="button" onclick="fetchData()" id="btn">Search</button>
@@ -82,18 +98,21 @@
     <p id="description"> </p>
      <button type="button" id="fav-btn" disabled>Favorite Player🎔</button>
      </div>
+     </section>
 <!-- ============= Favorites Container Html====================================================================================================-->
-<div class="card-header"><h1> My Players</h1></div>
+ <section id="my-player">
+<div class="card-header"><h1>⚽My Players🏀</h1></div>
 <div id="favorites-container"></div>
-
+</section>
     <!--==================================================================-->
-    <div class="card-header"><h1> ⚽Features⚽</h1></div>
+     <section id="features" class="features">
+    <div class="card-header"><h1> 🏈Features⚾</h1></div>
     <div class="card-container">
 
             <div class="card-1">
                 <div class="card-content">
-                    <h3 class="card-title"> See Stats</h3>
-                    <p class="card-description">See your favorite teams record,standings and players</p>
+                    <h3 class="card-title"> Be Kept To Date On All Sports News</h3>
+                    <p class="card-description"> Become quickly updated on any player updates</p>
                 </div>
             </div>
 
@@ -106,16 +125,16 @@
 
             <div class="card-3">
                 <div class="card-content">
-                    <h3 class="card-title">Learn about the Beautiful Game</h3>
-                    <p class="card-description"> Learn about your favorite players and teams.</p>
+                    <h3 class="card-title">Learn All About The Players </h3>
+                    <p class="card-description"> Learn about your favorite players.</p>
                 </div>
             </div>
 
         </div>
+        </section>
     <!--==================================================================-->
- 
-    <div class="about-header"><h1> ⚽About Us⚽</h1></div>
-         <section id="about" class="about">
+  <section id="about">
+    <div class="about-header"><h1> 🎾About Us🏒</h1></div>
     <div class="container">
         <div class="about-content">
 <div class="about-text">
@@ -129,19 +148,24 @@
 </section>
 </section>
    <!--==================================================================-->
+       <section id="credits">
    <footer id="credits" class="main-footer">
         <div class="container">
             <div class="credit-content">
                 <div class="credit-section">
-                    <h3>Soccer Searcher</h3>
-                    <p>The ultimate soccer statistics website! 
-                API used: SportsDB
-                    </p>
+                    <h3> Credits</h3>
+                   <ul class="special-thanks">
+                    <li><p>API used : SportsDB</p></li>
+                    <li><p>Bergen Tech Teterboro</p></li>
+                    <li><p> Computer Science Class of 2029</p></li>
+                   </ul>
                 </div>
                 <div class="credit-section">
                     <h3>Quick Links</h3>
                     <ul class="credit-links">
                         <li><a href="#features">Features</a></li>
+                         <li><a href="#search">Search</a></li>
+                        <li><a href ="#my-player">My Players</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#credit">Credits</a></li>
                     </ul>
@@ -155,6 +179,7 @@
             </div>
         
     </footer>
+    </section>
 <script src="script.js"></script>
 </body>
 </html>
