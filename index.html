@@ -35,8 +35,9 @@
       <div class="search-bar">
     <input type="text" class="user-input" id="pokemonName" placeholder="Enter player name" >
     <button type="button" onclick="fetchData()" id="btn">Search</button>
+    <p id="error" style="color:red; text-align:center;"></p>
     </div>
-    <div class="stat-page">
+    <div class="hidden stat-page" id="player-section">
     <div class="main-page">
     <img src="" alt="soccer badge" id="badge" style="display:none;">
     <div class="block-one">
@@ -57,30 +58,33 @@
     <p id="player-insta"></p>
     <p id="player-youtube"></p>
     </div>
-     <div class="other-facts">
+     <div class="quick-facts">
+    <p id="position"></p>
+    <p id="dateBorn"></p>
+    <p id="player-height"></p>
+    <p id="player-weight"></p>
+ <p id="player-number"> </p>
+    </div>
+     </div>
+   
+    <div class="boxes-two">
+     <div class="sport-position">
+<p> This athelte plays <span id="sport"></span> <span id="sportIcon"></span></p>
+<p id="birth-place">From</p>
+<div id="flagContainer"></div>
+    </div>
+    <div class="other-facts">
     <p id="player-wage" > </p>
     <p id="player-kit"> </p>
     </div>
     </div>
-   
-    <div class="boxes-two">
-     <div class="sport-position">
-<p><span id="sport"></span> <span id="sportIcon"></span></p>
-    </div>
-    <div class="quick-facts">
-    <p id="position" stlye="display:none;"> </p>
-    <p id="dateBorn"></p>
-    <p id="birth-place"></p>
-    <p id="player-height"> </p>
-    <p id="player-weight"> </p>
- <p id="player-number"></p>
-    </div>
-    </div>
     </div>
     <p id="description"> </p>
-     <button type="button" id="fav-btn">Favortie</button>
+     <button type="button" id="fav-btn" disabled>Favorite Player🎔</button>
      </div>
-     <div id="favorites-container"></div>
+<!-- ============= Favorites Container Html====================================================================================================-->
+<div class="card-header"><h1> My Players</h1></div>
+<div id="favorites-container"></div>
 
     <!--==================================================================-->
     <div class="card-header"><h1> ⚽Features⚽</h1></div>

@@ -1,3 +1,5 @@
+let fullPlayer = null;
+let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
 //==============================================================================================================================================
 async function fetchData() {
     try {
@@ -9,31 +11,38 @@ async function fetchData() {
             document.getElementById("error").textContent = "Player not found";
             return;
         }
+        document.getElementById("player-section").classList.remove("hidden");
         const player = data.player[0];
         const playerId = player.idPlayer;
 
         const badge = document.getElementById("badge");
         badge.src = player.strCutout || player.strThumb;
         badge.style.display = "block";
-        badge.style.height = "400px";
-        badge.style.width = "400px"
+        badge.style.height = "450px";
+        badge.style.width = "450px"
 
-        document.getElementById("position").textContent = player.strPosition;
-        document.getElementById("player-team").textContent = player.strTeam
+        document.getElementById("position").textContent = `Plays ${player.strPosition}` || "Player does not have a number"
+        if(player.team === "_Retired Basketball"){
+ document.getElementById("player-team").textContent = "is retired"
+        }
+        document.getElementById("player-team").textContent = player.strTeam || "Is retired"
         document.getElementById("player-name").textContent = player.strPlayer
 //================================================================================================================================
         const detailsRes = await fetch(`https://www.thesportsdb.com/api/v1/json/123/lookupplayer.php?id=${playerId}`);
         const detailsData = await detailsRes.json();
 
-        const fullPlayer = detailsData.players[0];  
-        
+        fullPlayer = detailsData.players[0];  
+document.getElementById('fav-btn').disabled = false;
+
+
+
         document.getElementById("player-weight").textContent = fullPlayer.strWeight
         document.getElementById("player-height").textContent = fullPlayer.strHeight
         document.getElementById("player-wage").textContent = ` ${fullPlayer.strWage} with the ${player.strTeam}` || "This player does not have any contract history"
         document.getElementById("player-kit").textContent = fullPlayer.strKit  || "This player does not have a kit"
-        document.getElementById("dateBorn").textContent = fullPlayer.dateBornLocal || fullPlayer.dateBorn || "N/A";
-        document.getElementById("birth-place").textContent = fullPlayer.strBirthLocation
-        document.getElementById("player-number").textContent = fullPlayer.strNumber  
+        document.getElementById("dateBorn").textContent = `Born on ${fullPlayer.dateBorn}` || fullPlayer.dateBorn || "N/A";
+        document.getElementById("birth-place").textContent = `From ${fullPlayer.strBirthLocation}`
+        document.getElementById("player-number").textContent = `Wears number ${fullPlayer.strNumber}`  
         document.getElementById("player-twitter").textContent = fullPlayer.strTwitter || "This player does not have a Twitter account"
         document.getElementById("player-facebook").textContent = fullPlayer.strFacebook || "This player does not have a Facebook account"
         document.getElementById("player-insta").textContent = fullPlayer.strInstagram 
@@ -51,36 +60,24 @@ async function fetchData() {
           sportIcon.textContent = "⚽"
         }
         if(fullPlayer.strSport === "Basketball"){
-          sportIcon.textContent = "🏀"
+          sportIcon.textContent = "🏀 Basketball"
         }
         if(fullPlayer.strSport === "Baseball"){
-          sportIcon.textContent = "⚾ "
+          sportIcon.textContent = "⚾ Baseball"
         }
       if(fullPlayer.strSport === "Hockey"){
-        sportIcon.textContent = "🏒 "
+        sportIcon.textContent = "🏒 Hockey"
       }
       if(fullPlayer.strSport ==="Motorsport"){
-        sportIcon.textContent = "🏎️"
+        sportIcon.textContent = "🏎️ Motorsport"
       }
       if(fullPlayer.strSport === "American Football"){
-        sportIcon.textContent = "🏈"
+        sportIcon.textContent = "🏈 American Football"
       }
 //================================================================================================================================
-function favorite(player){
-  let favorites = JSON.parse(localStorage.getItem(`favorites`) || `[]`)
 
-  if(!favorites.some(p => p.idPlayer === player.idPlayer)){
-    favorites.push(player)
-    localStorage.setItem(`favorites` , JSON.stringify(favorites))
-  }
-}
 
-document.getElementById(`fav-btn`).onclick = () =>{
-  favorite(fullPlayer)
-}
 
-const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-favorites.forEach(player => console.log(player.strPlayer));
 
 //======================================================================================================================================
 //=======================================================================================================================================
@@ -1705,7 +1702,7 @@ if(player.strTeam === "Utah Hockey Club"){
 //=======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
-/*
+
 if (player.strNationality === "Portugal") {
   document.getElementById("flagContainer").innerHTML = ""
   const playerFlag = document.createElement("img")
@@ -2219,7 +2216,7 @@ if (player.strNationality === "Serbia"){
   playerFlag.style.width = "75px";
   document.getElementById("flagContainer").appendChild(playerFlag);
 }
-  */
+  
 //=======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
@@ -2318,6 +2315,69 @@ if (player.strTeam === "Williams"){
     }
 }
 
-//function loadFavorites(){
- // const favorites = JSON.parse(localStorage.getItem(`favorites`)) |
-//}
+
+
+
+function favorite(player) {
+  if (!player || !player.idPlayer) return
+  if (!player || !player.idPlayer || !player.strPlayer) return;
+  if (!favorites.some(p => p.idPlayer === player.idPlayer)) {
+    favorites.push(player);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    loadFavorites(); 
+  }
+}
+
+document.getElementById('fav-btn').onclick = () => {
+  favorite(fullPlayer);
+};
+
+function loadFavorites() {
+  favorites = favorites.filter(p => p && p.idPlayer && p.strPlayer);
+  const container = document.getElementById('favorites-container');
+  container.innerHTML = ""; 
+
+if(!favorites || favorites.length === 0){
+  container.style.display = "none";
+  return
+}
+
+container.style.display = "block"
+
+  favorites.forEach(player => {
+    if (!player || !player.idPlayer || !player.strPlayer) return;
+    const card = document.createElement("div");
+    card.className = "favorite-full-card";
+
+    card.innerHTML = `
+      <button class="remove-fav" data-id="${player.idPlayer}">❌</button>
+
+      <img src="${player.strCutout || player.strThumb}" class="fav-badge">
+
+      <p class="fav-player-name">${player.strPlayer}</p>
+
+      <div class="fav-quick-facts">
+          <p><strong>Position:</strong> ${player.strPosition || "N/A"}</p>
+          <p><strong>Born:</strong> ${player.dateBorn || "N/A"}</p>
+          <p><strong>Birthplace:</strong> ${player.strBirthLocation || "N/A"}</p>
+          <p><strong>Height:</strong> ${player.strHeight || "N/A"}</p>
+          <p><strong>Weight:</strong> ${player.strWeight || "N/A"}</p>
+          <p><strong>Number:</strong> ${player.strNumber || "N/A"}</p>
+      </div>
+    `;
+
+    container.appendChild(card);
+
+    card.querySelector(".remove-fav").onclick = () => {
+      removeFavorite(player.idPlayer);
+    };
+  }); 
+}
+
+function removeFavorite(id) {
+  favorites = favorites.filter(player => player.idPlayer !== id);
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  loadFavorites();
+}
+
+window.onload = loadFavorites;
