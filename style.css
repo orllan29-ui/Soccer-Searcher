@@ -342,10 +342,87 @@ margin-left: 275px;
     color: #c5bbbb;
     font-weight: bold;
     margin: 20px;
-
+background: linear-gradient(-149deg, #0f0e1f 0%, #161d36 100%);
+border-radius: 25px;
+padding: 25px;
+font-family: "Poppins", sans-serif;
 }
-.stat-page img{
-border:5px solid white;
-}
- 
 
+.main-page{
+display: flex;
+}
+
+#player-name{
+    font-size: 25px;
+    background-color: #243738;
+    font-weight: bold;
+    border-radius: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.logos-pages{
+    display: block;
+}
+.actual-logos{
+    display: flex;
+}
+
+.block-one{
+    display: block;
+}
+
+.social-links{
+    display: block; 
+    background-color: #161d36;
+    border-radius: 25px;
+    padding: 45px ;
+    margin: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sport-position{
+    display: block; 
+    background-color: #161d36;
+    text-align: center;
+    font-size: 40px;
+    padding: 0px auto;
+ border-radius: 12px;
+}
+.boxes{
+    display: block;
+}
+.quick-facts{
+    display: block; 
+    background-color: #161d36;
+    border-radius: 25px;
+    padding: 5px 70px;
+    margin: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.other-facts{
+    display: block; 
+    background-color: #161d36;
+    border-radius: 25px;
+    padding: 0px auto;
+    padding: 40px ;
+    margin: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+.boxes-two{
+    display: block;
+}
+
+.full-team{
+    display: block;
+}
+
+#fav-btn{
+    font-weight: bold;
+    background-color: rgb(90, 161, 102);
+    padding: 33px ;
+    border-radius: 12px;
+    margin-bottom: -50px;  
+}

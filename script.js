@@ -15,9 +15,12 @@ async function fetchData() {
         const badge = document.getElementById("badge");
         badge.src = player.strCutout || player.strThumb;
         badge.style.display = "block";
+        badge.style.height = "400px";
+        badge.style.width = "400px"
 
         document.getElementById("position").textContent = player.strPosition;
         document.getElementById("player-team").textContent = player.strTeam
+        document.getElementById("player-name").textContent = player.strPlayer
 //================================================================================================================================
         const detailsRes = await fetch(`https://www.thesportsdb.com/api/v1/json/123/lookupplayer.php?id=${playerId}`);
         const detailsData = await detailsRes.json();
@@ -26,12 +29,19 @@ async function fetchData() {
         
         document.getElementById("player-weight").textContent = fullPlayer.strWeight
         document.getElementById("player-height").textContent = fullPlayer.strHeight
-        document.getElementById("player-twitter").textContent = fullPlayer.strTwitter
-        document.getElementById("player-wage").textContent = fullPlayer.strWage
-        document.getElementById("player-kit").textContent = fullPlayer.strKit
+        document.getElementById("player-wage").textContent = ` ${fullPlayer.strWage} with the ${player.strTeam}` || "This player does not have any contract history"
+        document.getElementById("player-kit").textContent = fullPlayer.strKit  || "This player does not have a kit"
+        document.getElementById("dateBorn").textContent = fullPlayer.dateBornLocal || fullPlayer.dateBorn || "N/A";
+        document.getElementById("birth-place").textContent = fullPlayer.strBirthLocation
+        document.getElementById("player-number").textContent = fullPlayer.strNumber  
+        document.getElementById("player-twitter").textContent = fullPlayer.strTwitter || "This player does not have a Twitter account"
+        document.getElementById("player-facebook").textContent = fullPlayer.strFacebook || "This player does not have a Facebook account"
+        document.getElementById("player-insta").textContent = fullPlayer.strInstagram 
+        document.getElementById("player-youtube").textContent = fullPlayer.strYoutube 
+        
         const description = document.getElementById("description");
         description.textContent = fullPlayer.strDescriptionEN || "No description available.";''
-        
+//================================================================================================================================     
         document.getElementById("sportIcon").textContent = fullPlayer.strSport
         const sportIcon = document.getElementById("sportIcon")
 
@@ -44,10 +54,10 @@ async function fetchData() {
           sportIcon.textContent = "🏀"
         }
         if(fullPlayer.strSport === "Baseball"){
-          sportIcon.textContent = "⚾"
+          sportIcon.textContent = "⚾ "
         }
       if(fullPlayer.strSport === "Hockey"){
-        sportIcon.textContent = "🏒"
+        sportIcon.textContent = "🏒 "
       }
       if(fullPlayer.strSport ==="Motorsport"){
         sportIcon.textContent = "🏎️"
@@ -55,6 +65,23 @@ async function fetchData() {
       if(fullPlayer.strSport === "American Football"){
         sportIcon.textContent = "🏈"
       }
+//================================================================================================================================
+function favorite(player){
+  let favorites = JSON.parse(localStorage.getItem(`favorites`) || `[]`)
+
+  if(!favorites.some(p => p.idPlayer === player.idPlayer)){
+    favorites.push(player)
+    localStorage.setItem(`favorites` , JSON.stringify(favorites))
+  }
+}
+
+document.getElementById(`fav-btn`).onclick = () =>{
+  favorite(fullPlayer)
+}
+
+const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+favorites.forEach(player => console.log(player.strPlayer));
+
 //======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
@@ -740,7 +767,7 @@ async function fetchData() {
           document.getElementById("teamContainer").innerHTML=""
           const teamIcon = document.createElement("img")
           teamIcon.src = "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-nassr.7e60a8fc.png";
-          teamIcon.style.width = "200px"
+          teamIcon.style.width = "150px"
           document.getElementById("teamContainer").appendChild(teamIcon)
         }
               if(player.strTeam === "Al-Ahli"){
@@ -1678,6 +1705,7 @@ if(player.strTeam === "Utah Hockey Club"){
 //=======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
+/*
 if (player.strNationality === "Portugal") {
   document.getElementById("flagContainer").innerHTML = ""
   const playerFlag = document.createElement("img")
@@ -2191,6 +2219,7 @@ if (player.strNationality === "Serbia"){
   playerFlag.style.width = "75px";
   document.getElementById("flagContainer").appendChild(playerFlag);
 }
+  */
 //=======================================================================================================================================
 //=======================================================================================================================================
 //=======================================================================================================================================
@@ -2289,3 +2318,6 @@ if (player.strTeam === "Williams"){
     }
 }
 
+//function loadFavorites(){
+ // const favorites = JSON.parse(localStorage.getItem(`favorites`)) |
+//}
